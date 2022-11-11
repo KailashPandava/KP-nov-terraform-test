@@ -38,3 +38,7 @@ output "kailashmyawsserver-ip" {
 output "kailashmyawsserver-pip" {
   value = aws_instance.kailashmyawsserver.private_ip
 }
+
+output "kailashmyawsserver-ipv6" {
+  value = aws_instance.kailashmyawsserver.instance_type
+}
