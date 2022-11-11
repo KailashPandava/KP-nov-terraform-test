@@ -35,6 +35,6 @@ output "kailashmyawsserver-ip" {
   value = aws_instance.kailashmyawsserver.public_ip
 }
 
-output "kailashmyawsserver-ip" {
+output "kailashmyawsserver-pip" {
   value = aws_instance.kailashmyawsserver.private_ip
 }
