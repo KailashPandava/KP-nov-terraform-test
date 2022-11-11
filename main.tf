@@ -16,21 +16,21 @@ variable "hw" {
 
 variable "name" {
   type = string
-  default = "gagan-server1"
+  default = "kailash11-server1"
   description = "Enter your server name"
 }
 
-resource "aws_instance" "myawsserver" {
+resource "aws_instance" "kailashmyawsserver" {
   ami = var.image
   instance_type = var.hw
 
   tags = {
     Name = var.name
     Env = "test"
-    Owner = "Gagandeep"
+    Owner = "kailash11"
   }
 }
 
-output "myawsserver-ip" {
-  value = aws_instance.myawsserver.public_ip
+output "kailashmyawsserver-ip" {
+  value = aws_instance.kailashmyawsserver.public_ip
 }
