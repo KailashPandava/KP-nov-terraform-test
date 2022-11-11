@@ -34,3 +34,7 @@ resource "aws_instance" "kailashmyawsserver" {
 output "kailashmyawsserver-ip" {
   value = aws_instance.kailashmyawsserver.public_ip
 }
+
+output "kailashmyawsserver-ip" {
+  value = aws_instance.kailashmyawsserver.private_ip
+}
